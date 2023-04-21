@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converters</title>
+    <link rel="icon" href="E:\UnitConverters\images\titleimg.png">
+    <link rel="stylesheet" href="HStyle.css">
+</head>
+
+<body>
+  <div>
+    <nav class="main"> <a href="#"><p class="title">Unit Converters</p></a></nav>
+  </div>
+  <div>
+    
+    <p class="subheading">Unit Converter Express Version</p> 
+  </div>
+  <div class="unit" style="padding-left: 400px;">
+    <button class="tablink" onclick="openPage('form1',this,'#fd19b8')">Lenght</button>
+    <button class="tablink" onclick="openPage('form4',this,'#fd19b8')">Volume</button>
+    <button class="tablink" onclick="openPage('form3',this,'#fd19b8')">Area</button>
+    <button class="tablink" onclick="openPage('form2',this,'#fd19b8')">Temperature</button>
+    <button class="tablink" onclick="openPage('form5',this,'#fd19b8')">Weight</button>
+    <button class="tablink" onclick="openPage('form6',this,'#fd19b8')">Time</button>
+  </div>
+    <div class="length" style="padding-left: 400px;">
+          <form id="form1" class="tabcontent">
+            <div class="container">
+              <div class="input1" id="from">
+                <label for="fr">From:</label>
+                <input type="number" id="fr" oninput="MeterTo(this.value)" onchange="MeterTo(this.value)">
+              </div>
+              <div class="input1">
+                <div style="padding-left: 20px;">
+                <label for="to">To:</label>
+                <input type="number" id="to">
+              </div>
+            </div>
+            </div>
+            <div class="container">
+              <div class="input2">
+                <select name="" id="len1" multiple>
+                  <option value="M" >Meter</option>
+                  <option value="k">Kilometer</option>
+                  <option value="C">Centimeter</option>
+                  <option value="Mm">Millimeter</option>
+                  <option value="Mi">Mile</option>
+                  <option value="Y">Yard</option>
+                  <option value="F">Foot</option>
+                  <option value="I">inch</option>
+                </select>
+              </div>
+              <div class="input2" style="padding-left: 25px ;">
+                <select name="" id="len2" multiple>
+                  <option value="M1">Meter</option>
+                  <option value="K1">Kilometer</option>
+                  <option value="C1">Centimeter</option>
+                  <option value="Mm1">Millimeter</option>
+                  <option value="Mi1">Mile</option>
+                  <option value="Y1">Yard</option>
+                  <option value="F1">Foot</option>
+                  <option value="I1">inch</option>
+                </select>
+              </div>
+            </div>
+          </form>
+          <form id="form2" class="tabcontent">
+            <div class="container">
+              <div class="input1" id="from">
+                <label for="fr_t">From:</label>
+                <input type="number" id="fr_t">
+              </div>
+              <div class="input1">
+                <div style="padding-left: 20px;">
+                <label for="to_t">To:</label>
+                <input type="number" id="to_t">
+              </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="input2">
+                <select name="" id="tem1" multiple>
+                  <option value="TC">Celsius</option>
+                  <option value="TK">Kelvin</option>
+                  <option value="TF">Fahrenheit</option>
+                  
+                </select>
+              </div>
+              <div class="input2" style="padding-left: 25px ;">
+                <select name="" id="tem2" multiple>
+                  <option value="TC1">Celsius</option>
+                  <option value="TK1">Kelvin</option>
+                  <option value="TF1">Fahrenheit</option>
+                 
+                </select>
+              </div>
+            </div>
+          </form>
+          <form id="form3" class="tabcontent">
+            <div class="container">
+              <div class="input1" id="from">
+                <label for="fr_A">From:</label>
+                <input type="number" id="fr_A">
+              </div>
+              <div class="input1">
+                <div style="padding-left: 20px;">
+                <label for="to_A">To:</label>
+                <input type="number" id="to_A">
+              </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="input2">
+                <select name="" id="AR1" multiple>
+                  <option value="SM">Square meter</option>
+                  <option value="SK">Square Kilometer</option>
+                  <option value="SC">Square Centimeter</option>
+                  <option value="SMm">Square Millimeter</option>
+                  <option value="SH">Hectare</option>
+                  <option value="SMi">Square Mile</option>
+                  <option value="SF">Square Foot</option>
+                  <option value="SI">Square inch</option>
+                </select>
+              </div>
+              <div class="input2" style="padding-left: 25px ;">
+                <select name="" id="AR2" multiple>
+                  <option value="SM1">Square meter</option>
+                  <option value="SK1">Square Kilometer</option>
+                  <option value="SC1">Square Centimeter</option>
+                  <option value="SMm1">Square Millimeter</option>
+                  <option value="SH1">Hectare</option>
+                  <option value="SMi1">Square Mile</option>
+                  <option value="SF1">Square Foot</option>
+                  <option value="SI1">Square inch</option>
+                </select>
+              </div>
+            </div>
+          </form>
+          <form id="form4" class="tabcontent">
+            <div class="container">
+              <div class="input1" id="from">
+                <label for="fr_v">From:</label>
+                <input type="number" id="fr_V">
+              </div>
+              <div class="input1">
+                <div style="padding-left: 20px;">
+                <label for="to_V">To:</label>
+                <input type="number" id="to_V">
+              </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="input2">
+                <select name="" id="VO1" multiple>
+                  <option value="CM">Cubic Meter</option>
+                  <option value="CK">Cubic Kilometer</option>
+                  <option value="CC">Cubic Centimeter</option>
+                  <option value="CMm">Cubic Millimeter</option>
+                  <option value="CL">Liter</option>
+                  <option value="CMi">Cubic Mile</option>
+                  <option value="CF">Cubic Foot</option>
+                  <option value="CI">Cubic inch</option>
+                </select>
+              </div>
+              <div class="input2" style="padding-left: 25px ;">
+                <select name="" id="VO2" multiple>
+                  <option value="CM1">Cubic Meter</option>
+                  <option value="CK1">Cubic Kilometer</option>
+                  <option value="CC1">Cubic Centimeter</option>
+                  <option value="CMm1">Cubic Millimeter</option>
+                  <option value="CL1">Liter</option>
+                  <option value="CMi1">Cubic Mile</option>
+                  <option value="CF1">Cubic Foot</option>
+                  <option value="CI1">Cubic inch</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        
+          <form id="form5" class="tabcontent" >
+            <div class="container">
+              <div class="input1" id="from">
+                <label for="fr_W">From:</label>
+                <input type="number" id="fr_W">
+              </div>
+              <div class="input1">
+                <div style="padding-left: 20px;">
+                <label for="to_W">To:</label>
+                <input type="number" id="to_W">
+              </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="input2">
+                <select name="" id="WT1" multiple>
+                  <option value="WK">Kilogram</option>
+                  <option value="WG">Gram</option>
+                  <option value="WM">Metric Ton</option>
+                  <option value="WL">Long Ton</option>
+                  <option value="WP">Pound</option>
+                  <option value="WC">Carrat</option>
+                  <option value="WA">Atomic Mass unit</option>
+                </select>
+              </div>
+              <div class="input2" style="padding-left: 25px ;">
+                <select name="" id="WT2" multiple>
+                  <option value="WK1">Kilogram</option>
+                  <option value="WG1">Gram</option>
+                  <option value="WM1">Metric Ton</option>
+                  <option value="WL1">Long Ton</option>
+                  <option value="WP1">Pound</option>
+                  <option value="WC1">Carrat</option>
+                  <option value="WA1">Atomic Mass unit</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        
+          <form id="form6" class="tabcontent">
+            <div class="container">
+              <div class="input1" id="from">
+                <label for="fr_tim">From:</label>
+                <input type="number" id="fr_tim">
+              </div>
+              <div class="input1">
+                <div style="padding-left: 20px;">
+                <label for="to_tim">To:</label>
+                <input type="number" id="to_tim">
+              </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="input2">
+                <select name="" id="tim1" multiple>
+                  <option value="TS">Second</option>
+                  <option value="TMs">MilliSecond</option>
+                  <option value="TMi">MicroSecond</option>
+                  <option value="TM">Minute</option>
+                  <option value="TH">Hour</option>
+                  <option value="TD">Day</option>
+                  <option value="TW">Week</option>
+                  <option value="TMo">Month</option>
+                  <option value="TY">Year</option>
+                </select>
+              </div>
+              <div class="input2" style="padding-left: 25px ;">
+                <select name="" id="tim2" multiple>
+                  <option value="TS1">Second</option>
+                  <option value="TMs1">MilliSecond</option>
+                  <option value="TMi1">MicroSecond</option>
+                  <option value="TM1">Minute</option>
+                  <option value="TH1">Hour</option>
+                  <option value="TD1">Day</option>
+                  <option value="TW1">Week</option>
+                  <option value="TMo1">Month</option>
+                  <option value="TY1">Year</option>
+                </select>
+              </div>
+            </div>
+          </form>
+    </div>
+<script src="HScript.js">
+  
+</script>
+</body>
+</html>

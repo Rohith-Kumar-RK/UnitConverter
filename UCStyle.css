@@ -1,0 +1,144 @@
+body{
+  background-color:#96E4DF;
+}
+.title {
+  font-style: oblique;
+  font-size: 40px;
+  color: rgb(247, 251, 3);
+  text-align: center;
+  padding-left: 540px;
+}
+
+.main{
+background-color:#B91372;
+position: fixed;
+left: 0;
+right: 0;
+top: 5px;
+height: 50px;
+display: flex;
+align-items: center;
+
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+.head{
+    background-color: #eaecec;
+    padding: 10px;
+    height: 5px;
+    justify-content: space-between;
+}
+.subheading{
+  font-size: 27px;
+  -moz-text-decoration-style: solid;
+  color: rgb(255, 153, 0);
+  padding-left: 400px;
+  padding-top: 60px;
+  
+}
+
+.btn{
+    padding-left: 900px;
+    padding-top: 60px;
+    cursor: pointer;
+}
+
+
+.center{
+    width:650px;
+    height:350px;
+    margin:8% auto;
+    background:#f3f5f6;
+    border-radius:5px;
+    position:relative;
+    overflow:hidden;
+  border: 2px solid black;
+}
+.hero{
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.unit button{
+  background-color: black;
+  color: #f3f5f6;
+  width: 85px;
+  height: 35px;
+  cursor: pointer;
+  touch-action: auto;
+  /*padding-top: 0px;*/
+}
+form{
+  background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 2px solid black;
+  width: 540px;
+  height: 350px;
+}
+.length{
+  display: flexbox;
+  justify-content: space-around;
+}
+.container{
+  width: 80px;
+  padding-left: 50px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input1 input{
+  height: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid lightgray;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+select{
+  width: 210px;
+  height: 200px;
+  font-size: 17px;
+  font-family: Geneva;
+  cursor: pointer;
+}
+button{
+  margin-top       : 20px;
+  overflow         : hidden;
+  }
+button {
+  font-weight      : bold;
+  color            : white;
+  border           : none;
+  outline          : none;
+ /* padding          : 12px 16px;
+  blue*/
+  background-color : #0af51a;
+  cursor           : pointer;
+  
+  }
+button:hover {
+  font-weight      : bold;
+  color            : white;
+  /*green*/
+  background-color : #05fd0d;
+}
+#form2{
+  display:none;
+}
+#form3{
+  display:none;
+}
+#form4{
+  display:none;
+}
+#form5{
+  display:none;
+}
+#form6{
+  display:none;
+}
